@@ -19,22 +19,28 @@
 
 
 *{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family:var(--font);
-  background: radial-gradient(900px 420px at 20% 10%, rgba(42,99,255,.20), transparent 60%),
-              radial-gradient(900px 420px at 80% 0%, rgba(30,58,95,.22), transparent 55%),
-              var(--bg);
-  color:var(--paper);
-  line-height:1.5;
+html{
+  background:
+    radial-gradient(900px 420px at 20% 10%, rgba(42,99,255,.20), transparent 60%),
+    radial-gradient(900px 420px at 80% 0%, rgba(30,58,95,.22), transparent 55%),
+    #050B14;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
 }
+
+body{
+  background: transparent;
+}
+
 
 a{color:inherit; text-decoration:none}
 a:hover{opacity:.92}
 .small{font-size:.92rem;color:var(--muted)}
 
 .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+
+
 
 /* Brand bar */
 .brandbar{
