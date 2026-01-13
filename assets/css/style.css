@@ -131,6 +131,19 @@ a:hover{opacity:.92}
 .card h1, .card h2, .card h3{margin:8px 0 8px; line-height:1.12}
 .card p{margin:0; color:var(--muted)}
 
+.card .card{
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,.08);
+  box-shadow: none;
+}
+
+.card .card.span-6,
+.card .card.span-12{
+  border-radius:12px;
+  padding:16px;
+}
+
+
 /* Hero card */
 .hero .card{
   background: linear-gradient(180deg, rgba(42,99,255,.14), rgba(16,18,20,.96));
@@ -143,7 +156,7 @@ a:hover{opacity:.92}
 
 /* Service list */
 .service{
-  padding:14px 0;
+  padding:18px 0;
   border-top:1px solid var(--line);
 }
 .service:first-of-type{border-top:none}
@@ -162,7 +175,7 @@ a:hover{opacity:.92}
 .badge.blue{background:rgba(30,58,95,.18)}
 .service .desc{margin-top:6px; color:var(--muted)}
 .service ul{margin:10px 0 0 18px; color:var(--muted)}
-.service ul li{margin:4px 0}
+.service ul li{margin:6px 0}
 
 /* Footer */
 .footer{
