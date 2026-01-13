@@ -185,6 +185,12 @@ a:hover{opacity:.92}
   color:var(--muted);
 }
 
+.btn.navlink.active{
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+}
+
+
 /* Responsive */
 @media (max-width: 860px){
   .span-8,.span-6,.span-4{grid-column: span 12}
