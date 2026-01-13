@@ -75,7 +75,7 @@ a:hover{opacity:.92}
 }
 .logo{display:flex; gap:10px; align-items:center}
 .logo img{
-  height:56px;      /* taille visuelle du logo */
+  height:112px;      /* taille visuelle du logo */
   width:auto;      /* laisse le logo s'étirer horizontalement */
   object-fit:contain;
   border-radius:0; /* logo détouré, pas d’arrondi */
