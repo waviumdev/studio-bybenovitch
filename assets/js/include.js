@@ -38,6 +38,21 @@
   inject("#bb-brandbar", "brandbar.html");
   inject("#bb-studioheader", "studioheader.html");
   inject("#bb-footer", "footer.html");
+// Local nav active state
+(function () {
+  const path = window.location.pathname.toLowerCase();
+  const links = document.querySelectorAll(".navlink");
+  links.forEach((a) => a.classList.remove("active"));
+
+  const isServices = path.includes("/services");
+  const isContact = path.includes("/contact");
+
+  links.forEach((a) => {
+    const key = a.getAttribute("data-nav");
+    if (key === "services" && isServices) a.classList.add("active");
+    if (key === "contact" && isContact) a.classList.add("active");
+  });
+})();
 
   // Year
   window.addEventListener("DOMContentLoaded", () => {
