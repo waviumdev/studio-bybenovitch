@@ -18,52 +18,70 @@
         <!-- Intro -->
         <div class="card span-12">
           <div class="kicker">Contact</div>
-          <h2>Décris ton projet.</h2>
+          <h2>Parle-moi de ton projet.</h2>
           <p>
-            Tu peux envoyer un simple mail.  
-            Plus tu es précis, plus la réponse sera rapide et claire.
+            Plus tu es précis, plus je peux te répondre vite avec un plan, un prix et un délai.
           </p>
         </div>
 
-        <!-- Main -->
+        <!-- Form -->
         <div class="card span-8">
-          <h3>📬 Écris à</h3>
-          <p style="font-size:1.1rem; margin-top:6px;">
-            <a href="mailto:contact@bybenocitch.com">contact@bybenovitch.com</a>
-          </p>
+          <form action="mailto:contact@bybenovitch.com" method="POST" enctype="text/plain">
 
-          <div style="margin-top:18px;">
-            <h3>Que mettre dans ton message</h3>
-            <ul>
-              <li>liens vers ta musique (Spotify, YouTube, Drive, etc.)</li>
-              <li>ce que tu veux sortir (single, EP, album)</li>
-              <li>deadline souhaitée</li>
-              <li>budget approximatif (même une fourchette)</li>
-              <li>ce qui bloque ou ce que tu veux améliorer</li>
-            </ul>
-          </div>
+            <label class="small">Nom / Projet</label>
+            <input class="input" type="text" name="Nom" required>
+
+            <label class="small">Email</label>
+            <input class="input" type="email" name="Email" required>
+
+            <label class="small">Liens (Spotify, YouTube, Drive…)</label>
+            <input class="input" type="text" name="Liens">
+
+            <label class="small">Que veux-tu faire ?</label>
+            <textarea class="input" name="Projet" rows="6" required></textarea>
+
+            <label class="small">Deadline</label>
+            <input class="input" type="text" name="Deadline">
+
+            <label class="small">Budget (optionnel)</label>
+            <input class="input" type="text" name="Budget">
+
+            <button class="btn primary" type="submit" style="margin-top:12px;">
+              Envoyer la demande
+            </button>
+
+          </form>
 
           <p class="small" style="margin-top:12px;">
-            Tu recevras une réponse avec :  
-            ce qu’il faut faire • le prix • le délai • comment payer.
+            Problème avec le formulaire ?  
+            Tu peux aussi écrire directement à  
+            <strong>contact@bybenovitch.com</strong>
           </p>
         </div>
 
-        <!-- Right -->
+        <!-- How it works -->
         <div class="card span-4">
-          <div class="kicker">Ce que tu reçois</div>
-          <ul>
-            <li>une réponse humaine</li>
-            <li>un plan clair</li>
-            <li>un prix sans surprise</li>
-            <li>un lien de paiement sécurisé</li>
-            <li>une facture</li>
-          </ul>
-
-          <p class="small" style="margin-top:12px;">
-            Aucun engagement long terme.  
-            Chaque projet est indépendant.
+          <div class="kicker">Comment ça marche</div>
+          <p class="small">
+            Tu envoies ton projet → je t’envoie un plan + un prix → si tu valides, tu reçois un lien de paiement → on lance.
           </p>
+          <p class="small" style="margin-top:10px;">
+            Pas de spam. Pas de devis flou. Juste du concret.
+          </p>
+          <hr style="border:none; border-top:1px solid rgba(255,255,255,.10); margin:14px 0;">
+
+<div class="kicker">Ce que je regarde</div>
+<ul style="margin:10px 0 0 18px; color: rgba(245,245,242,.72);">
+  <li>ton objectif (sortie, catalogue, identité, stratégie)</li>
+  <li>l’état actuel (fichiers prêts ? mix ? visuels ?)</li>
+  <li>les liens (Spotify/YouTube/Drive)</li>
+  <li>la deadline</li>
+  <li>le niveau d’exigence (références si tu en as)</li>
+</ul>
+
+<p class="small" style="margin-top:10px;">
+  Plus c’est clair, plus je peux te répondre vite.
+</p>
         </div>
 
       </div>
