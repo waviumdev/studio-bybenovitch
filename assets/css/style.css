@@ -179,11 +179,28 @@ a:hover{opacity:.92}
 
 /* Footer */
 .footer{
-  border-top:1px solid var(--line);
-  padding:22px 0;
-  margin-top:28px;
-  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:18px 0;
+  margin-top:40px;
 }
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.footer-right a{
+  margin-left:6px;
+}
+
+.footer-right span{
+  margin:0 6px;
+  opacity:.4;
+}
+
 
 .btn.navlink.active{
   border-color: rgba(255,255,255,.18);
