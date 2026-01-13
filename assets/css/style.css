@@ -75,11 +75,12 @@ a:hover{opacity:.92}
 }
 .logo{display:flex; gap:10px; align-items:center}
 .logo img{
-  height:56px;     /* augmente ici */
-  width:auto;      /* très important pour un PNG large */
-  border-radius:0; /* ton logo est déjà “détouré” */
+  height:56px;      /* taille visuelle du logo */
+  width:auto;      /* laisse le logo s'étirer horizontalement */
   object-fit:contain;
+  border-radius:0; /* logo détouré, pas d’arrondi */
 }
+
 .logo{gap:14px}
 .logo .title{font-weight:750; letter-spacing:.2px}
 .logo .subtitle{font-size:.9rem; color:var(--muted)}
