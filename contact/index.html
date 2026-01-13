@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demander un devis — Studio by Benovitch</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/include.js"></script>
+</head>
+<body>
+  <div id="bb-brandbar"></div>
+  <div id="bb-studioheader"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="card span-8">
+          <div class="kicker">Devis</div>
+          <h2>Décris ton projet</h2>
+          <p>Je te réponds avec un prix + délai. Si tu valides, je t’envoie un lien Stripe.</p>
+
+          <!-- Remplace tonemail@... -->
+          <form style="margin-top:14px" action="mailto:tonemail@exemple.com" method="post" enctype="text/plain">
+            <div style="display:grid; gap:10px;">
+              <input class="btn" style="justify-content:flex-start" name="Nom" placeholder="Nom / Artiste" />
+              <input class="btn" style="justify-content:flex-start" name="Email" placeholder="Email" />
+              <input class="btn" style="justify-content:flex-start" name="Service" placeholder="Quel pôle ? (Audio / Sortie / Image / Stratégie)" />
+              <textarea class="btn" style="justify-content:flex-start; height:150px" name="Projet" placeholder="Décris : liens, refs, deadline, budget si tu veux."></textarea>
+              <button class="btn primary" type="submit">Envoyer</button>
+            </div>
+          </form>
+
+          <p class="small" style="margin-top:12px;">
+            Astuce : ajoute un lien Drive/Dropbox/WeTransfer + une référence sonore/visuelle.
+          </p>
+        </div>
+
+        <div class="card span-4">
+          <div class="kicker">Contact direct</div>
+          <p>Email : <strong>tonemail@exemple.com</strong></p>
+          <p class="small">Tu peux aussi envoyer ta demande directement par mail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="bb-footer"></div>
+</body>
+</html>
