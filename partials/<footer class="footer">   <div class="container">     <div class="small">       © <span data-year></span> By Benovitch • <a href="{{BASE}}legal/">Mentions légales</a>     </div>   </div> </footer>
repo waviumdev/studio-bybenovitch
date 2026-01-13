@@ -1,0 +1,7 @@
+<footer class="footer">
+  <div class="container">
+    <div class="small">
+      © <span data-year></span> By Benovitch • <a href="{{BASE}}legal/">Mentions légales</a>
+    </div>
+  </div>
+</footer>
