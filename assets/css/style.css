@@ -1,42 +1,44 @@
 :root{
-  /* Blue night studio theme */
-  --bg:#050B14;        /* fond bleu nuit */
+  /* Studio theme: blue accents, neutral surfaces */
+  --bg:#050B14;              /* bleu nuit (fond global) */
   --paper:#F5F5F2;
   --muted:#B8B8B3;
 
   --line:rgba(255,255,255,.10);
 
-  --card:#0A1322;      /* cartes bleu sombre */
+  --card:#101214;            /* neutre (IMPORTANT) */
   --radius:16px;
   --max:1120px;
   --shadow: 0 10px 30px rgba(0,0,0,.28);
 
-  --accent:#2A63FF;    /* bleu accent (CTA) */
-  --accent2:#1E3A5F;   /* bleu acier secondaire */
+  --accent:#2A63FF;          /* bleu CTA */
+  --accent2:#1E3A5F;
 
   --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
 }
 
-
 *{box-sizing:border-box}
 html,body{height:100%}
+
+/* Put the blue glow on the page background, not on the content */
+html{
+  min-height:100%;
+  background:
+    radial-gradient(1000px 520px at 15% 0%, rgba(42,99,255,.22), transparent 60%),
+    radial-gradient(900px 520px at 85% 10%, rgba(30,58,95,.22), transparent 55%),
+    var(--bg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
 body{
   margin:0;
   font-family:var(--font);
-  background: radial-gradient(900px 420px at 20% 10%, rgba(42,99,255,.20), transparent 60%),
-              radial-gradient(900px 420px at 80% 0%, rgba(30,58,95,.22), transparent 55%),
-              var(--bg);
+  background: transparent;          /* IMPORTANT */
   color:var(--paper);
   line-height:1.5;
 }
-html, body {
-  min-height: 100%;
-}
 
-body{
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 a{color:inherit; text-decoration:none}
 a:hover{opacity:.92}
 .small{font-size:.92rem;color:var(--muted)}
@@ -130,7 +132,7 @@ a:hover{opacity:.92}
 
 /* Hero card */
 .hero .card{
-  background:linear-gradient(180deg, rgba(42,99,255,.18), rgba(10,19,34,.92));
+  background: linear-gradient(180deg, rgba(42,99,255,.14), rgba(16,18,20,.96));
   border:1px solid rgba(255,255,255,.12);
   box-shadow:var(--shadow);
 }
